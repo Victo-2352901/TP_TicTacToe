@@ -89,6 +89,7 @@ public class Placement : MonoBehaviour
 
     /// <summary>
     /// Affiche une grille si aucune n'est présente actuellement a la position du toucher de l'utilisateur
+    /// Cette méthode est grandement inspiré des notes de cour https://envimmersif-cegepvicto.github.io/exercice_adaptation_ar/
     /// </summary>
     /// <param name="context"></param>
     public void OnTap(InputAction.CallbackContext context)
@@ -127,7 +128,7 @@ public class Placement : MonoBehaviour
                             // Créer la grille à la position du plan
                             grilleActive = Instantiate(this.grille, position, Quaternion.identity);
 
-                            // Code trouver dans le cul d'un ours polaire
+                            // Félix m'a aider pour ce IF
                             if (!anchor)
                             {
                                 anchor = new GameObject("Anchor");
@@ -147,7 +148,6 @@ public class Placement : MonoBehaviour
 
                             jeuEnCour = true;
 
-                            // Assigner le tag pour pouvoir supprimer plus tard
                             grilleActive.tag = "Grille";
                         }
                         else
@@ -222,7 +222,6 @@ public class Placement : MonoBehaviour
                 jeuEnCour = false;
             }
 
-            // Match nul
             if (tourActuel == 9 && gagnant == null)
             {
                 UI.instance.MatchNul();
@@ -439,11 +438,14 @@ public class Placement : MonoBehaviour
     {
         for (int i = 0; i < symboles.Length; i++)
         {
+            if (symboles[i] != null)
+            {
                 Animator animator = symboles[i].GetComponent<Animator>();
                 if (animator != null)
                 {
                     animator.SetBool("Anim", false);
                 }
+            }
         }
     }
 }

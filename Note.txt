@@ -1,0 +1,6 @@
+Problème : 
+Anchor
+
+
+Récuperer components enfant :
+https://docs.unity3d.com/6000.3/Documentation/ScriptReference/Component.GetComponentsInChildren.html#:~:text=To%20find%20components%20attached%20to,call%20GetComponentsInChildren%20on%20that%20reference.

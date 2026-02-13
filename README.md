@@ -22,6 +22,14 @@ J'ai eu de la misère avec le ARAnchor de la grille. J'ai pris les lignes de cod
 L'animation des symboles déplaçais les symboles quand elles étaient jouées. J'ai du donc cocher le checkbox "Apply Root Motion" afin de faire jouer l'animation à la position actuelle.
 
 ## Annexe ##
+
+
+# Photos #
+Les photos sont situé dans le dossier photo à la racine du projet
+
+
+# Requete #
+
 Requête envoyer à ChatGPT : 
 
 Pourrais tu me donner plusieurs moyens pour vérifier si les cases cliqué sont libre et à quelle position ils sont dans mon jeu de tic tac toe.

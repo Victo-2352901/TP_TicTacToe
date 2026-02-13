@@ -13,7 +13,7 @@ public class Case : MonoBehaviour
     /// Vérifie si la case est occupée et si non renvoi le traitement à PlacerSymbole.
     /// </summary>
     /// <param name="controlleurJeu">Le script qui controle le jeu</param>
-    public void Cliquer(Placement controlleurJeu)
+    public void Cliquer(ControlleurJeu controlleurJeu)
     {
         if (estOccupee) return;
 

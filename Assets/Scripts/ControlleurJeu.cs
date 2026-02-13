@@ -9,7 +9,7 @@ using UnityEngine.UIElements.InputSystem;
 using UnityEngine.XR.ARFoundation;
 using UnityEngine.XR.ARSubsystems;
 
-public class Placement : MonoBehaviour
+public class ControlleurJeu : MonoBehaviour
 {
 
 
@@ -275,7 +275,7 @@ public class Placement : MonoBehaviour
     }
 
     /// <summary>
-    /// Remet les cases du tic tac toe libre
+    /// Met les cases du tic tac toe libre
     /// </summary>
     private void ReinitialiserCases()
     {
